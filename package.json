@@ -1,7 +1,6 @@
 {
   "name": "conpas",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,8 +18,12 @@
   },
   "homepage": "https://github.com/JMartin79-web/CONPAS#readme",
   "dependencies": {
-    "node-sass": "^7.0.3",
-    "nodemon": "^2.0.20",
     "sass": "^1.54.9"
+  },
+  "keywords": [],
+  "description": "",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.20"
   }
 }
