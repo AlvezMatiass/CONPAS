@@ -1,7 +1,8 @@
 
 // URL DEL CATALOGO "https://docs.google.com/spreadsheets/d/1rxIGbyQkkA7jroA-RSoI67uHtAYNTberI7AZb3SNC3U/gviz/tq?tqx=out:json&gid=0";
+// URL DELC ATALOGO DE OFERTAS "https://docs.google.com/spreadsheets/d/1rxIGbyQkkA7jroA-RSoI67uHtAYNTberI7AZb3SNC3U/gviz/tq?tqx=out:json&gid=2009238332";
 const url = "https://docs.google.com/spreadsheets/d/1rxIGbyQkkA7jroA-RSoI67uHtAYNTberI7AZb3SNC3U/gviz/tq?tqx=out:json&gid=0";
-
+const urlOFerta = "https://docs.google.com/spreadsheets/d/1rxIGbyQkkA7jroA-RSoI67uHtAYNTberI7AZb3SNC3U/gviz/tq?tqx=out:json&gid=2009238332";
 // CONSUMO DE FETCH CON ASYNC Y AWAIT
 const fetchData = async () => {
     try {
