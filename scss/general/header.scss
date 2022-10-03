@@ -1,0 +1,34 @@
+header{
+    @include shadow-bottom;
+
+    .header__direccion{
+        background-color: $azul;
+        color: $blanco;
+        text-align: center;
+        font-size: 0.8rem;
+        padding: 1%;
+    }
+
+    .header__div{
+        background-color: $blanco;
+        display: flex;
+        align-items: center;
+
+        padding: 5% 2%;
+        margin-bottom: 5%;
+        
+
+        .logo{
+            width: 30%;
+            img{width: 100%;}
+        }
+        .navbar{
+            display: flex;
+            justify-content: flex-end;
+
+            width: 70%;
+            a{margin-left: 5%; font-weight: 600;}
+        }
+    }
+    
+}

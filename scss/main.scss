@@ -1,1 +1,10 @@
+// UTILIDADES
+@import "./utilities/utilidades.scss";
+
+// BASICOS
+@import "./general/basico.scss";
+@import "./general/header.scss";
 @import "./general/footer";
+
+// PAGINAS
+@import "./paginas/home.scss";

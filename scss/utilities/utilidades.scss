@@ -1,0 +1,44 @@
+// COLORES
+$blanco-puro: #fff;
+$blanco: #fffaff;
+$negro: #1e1b18;
+
+$celeste: #3e92cc;
+$azul: #0a2463;
+
+$rosa: #d8315b;
+
+
+// COLORES SOMBRA
+$sombra-blanco: #f0f0f3;
+$sombra-oscura: #e6e0e6;
+;
+
+
+// MIXIN
+@mixin shadow-bottom{
+    box-shadow: 10px 10px 20px $sombra-oscura,;
+}
+
+@mixin neo-afuera{
+    background-color: $blanco;
+    border-radius: 20px;
+    box-shadow:  10px 10px 20px $sombra-oscura,
+                -10px -10px 20px $blanco-puro;
+}
+@mixin neo-afuera-small {
+    background-color: $blanco;
+    border-radius: 10px;
+    box-shadow:  5px 5px 10px $sombra-oscura,
+                -5px -5px 10px $blanco-puro;
+}
+
+
+
+@mixin neo-dentro{
+    background-color: $blanco;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 10px $sombra-oscura,
+            inset -5px -5px 10px $blanco-puro;
+}
+
