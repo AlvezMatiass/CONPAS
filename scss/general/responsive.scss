@@ -3,12 +3,11 @@
 @media (min-width:576px){
     // HEADER
     header{
+        margin-bottom: 5%;
         .header__div{
             padding: 5% 5%;
-            margin-bottom: 5%;
         }    
     }
-
     // HOME
     .catalogo{
         margin: 0 5% 5%;
@@ -25,11 +24,11 @@
 @media (min-width:768px){
     // HEADER
     header{
+        margin-bottom: 5%;
         .header__div{
             padding: 5% 10%;
-            margin-bottom: 5%;
         }    
-        }
+    }
 
     // HOME
     .catalogo{
@@ -40,20 +39,74 @@
         .catalogo__div{
             grid-template-columns: repeat(3,1fr);
         }
-        }
+    }
 }
 
 // 992 PX
 @media (min-width:992px){
-   
+    // HEADER
+    header{
+        margin-bottom: 3%;
+        .header__div{
+            padding: 3% 12%;
+        }    
+    }
+
+    // HOME
+    .catalogo{
+        margin: 0 12% 5%;
+        .buscador{
+            #buscador{ width: 55%;}
+        }
+        .catalogo__div{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
 }
 
 // 1200 PX
 @media (min-width:1200px){
-    
+    // HEADER
+    header{
+        margin-bottom: 3%;
+        .header__div{
+            padding: 3% 15%;
+        }    
+    }
+
+    // HOME
+    .catalogo{
+        
+        margin: 0 15% 5%;
+        .buscador{
+            #buscador{ width: 50%;}
+        }
+        .catalogo__div{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
 }
 
 // 1400 PX
  @media (min-width:1400px){
-    
+    // HEADER
+    header{
+        margin-bottom: 3%;
+        .header__div{
+            padding: 1% 15%;
+            
+        }    
+    }
+
+    // HOME
+    .catalogo{
+        
+        margin: 0 15% 5%;
+        .buscador{
+            #buscador{ width: 50%;}
+        }
+        .catalogo__div{
+            grid-template-columns: repeat(4,1fr);
+        }
+    }
  }

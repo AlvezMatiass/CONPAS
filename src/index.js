@@ -59,11 +59,11 @@ const printCards = (arrayCards) =>{
         templateCard.querySelector(".card").setAttribute("id",row.c[0].v);
         templateCard.querySelector(".img").setAttribute("src",row.c[1].v)
         templateCard.querySelector(".nombre").textContent = row.c[2].v;
-        templateCard.querySelector(".precio").textContent = row.c[3].v;
+        templateCard.querySelector(".precio").textContent = `$ ${row.c[3].v}`;
         templateCard.querySelector(".descripcion").textContent = row.c[4].v;
         templateCard.querySelector(".stock").textContent = (row.c[5].v);
         templateCard.querySelector(".categoria").textContent = row.c[6].v;
-        templateCard.querySelector(".oferta").textContent = row.c[7].v;
+        templateCard.querySelector(".oferta-txt").textContent = row.c[7].v;
         
         templateCard.querySelector(".button-card").textContent = "Contactar por WhatsApp"
         const clone = templateCard.cloneNode(true)
