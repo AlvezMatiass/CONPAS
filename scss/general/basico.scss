@@ -19,9 +19,16 @@ html{
     background-color: $blanco;
     font-family: 'Roboto', sans-serif;
     color: $negro;
-    
+
     a{
         text-decoration: none;
         color: $negro;
     }
+    button{font-family: 'Roboto', sans-serif;}
+}
+
+// PARA ESCONDER LA INFORMACION QUE SE NECESITA, PERO NO SE VE
+.invisible{
+    display: none!important;
+    
 }

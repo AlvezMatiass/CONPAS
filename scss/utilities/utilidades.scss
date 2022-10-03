@@ -11,7 +11,7 @@ $rosa: #d8315b;
 
 // COLORES SOMBRA
 $sombra-blanco: #f0f0f3;
-$sombra-oscura: #e6e0e6;
+$sombra-oscura: #c2bec2;
 ;
 
 
@@ -42,3 +42,23 @@ $sombra-oscura: #e6e0e6;
             inset -5px -5px 10px $blanco-puro;
 }
 
+@mixin neo-button{
+    color: $blanco-puro;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: linear-gradient(145deg, #429cda, #3883b8);
+    box-shadow:  5px 5px 5px $sombra-oscura,
+                -5px -5px 5px $blanco-puro;
+}
+@mixin neo-button-click {
+    color: $blanco-puro;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: #3e92cc;
+    box-shadow:  inset 5px 5px 5px #3883b8,
+                 inset -5px -5px 5px #44a1e0;;
+}
