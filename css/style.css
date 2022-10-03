@@ -38,7 +38,8 @@ header {
     header .header__div .logo {
       width: 30%; }
       header .header__div .logo img {
-        width: 100%; }
+        width: 100%;
+        max-width: 200px; }
     header .header__div .navbar {
       display: flex;
       justify-content: flex-end;
@@ -48,6 +49,9 @@ header {
         font-weight: 600; }
 
 /* footer */
+footer {
+  height: 500px; }
+
 .foot {
   background-color: #3a3838;
   height: 10vh; }
@@ -69,7 +73,8 @@ header {
             color: white; }
 
 .catalogo {
-  margin: 0 2% 5%; }
+  margin: 0 2% 5%;
+  height: min-content; }
   .catalogo .catalogo__presentacion {
     margin: 2% 0%; }
   .catalogo .buscador {
@@ -88,7 +93,7 @@ header {
       display: none; }
     .catalogo .buscador #buscador {
       border: none;
-      width: 50%;
+      width: 75%;
       padding: 15px;
       background-color: #fffaff;
       border-radius: 10px;
@@ -113,25 +118,35 @@ header {
   .catalogo .catalogo__div {
     margin: 2% 0%;
     display: grid;
-    gap: 2%; }
+    grid-template-columns: repeat(1, 1fr); }
     .catalogo .catalogo__div .card {
       background-color: #fffaff;
       border-radius: 10px;
       box-shadow: 5px 5px 10px #c2bec2, -5px -5px 10px #fff;
+      margin: 3%;
       display: flex;
       flex-direction: column; }
-      .catalogo .catalogo__div .card img {
-        background-color: aqua;
-        margin: 2%; }
+      .catalogo .catalogo__div .card .card__img {
+        background-color: #fffaff;
+        border-radius: 20px;
+        box-shadow: inset 5px 5px 10px #c2bec2, inset -5px -5px 10px #fff;
+        height: 80%;
+        width: 90%;
+        margin: 5% auto; }
+        .catalogo .catalogo__div .card .card__img img {
+          width: 100%;
+          overflow: hidden;
+          object-fit: cover;
+          border-radius: 15px; }
       .catalogo .catalogo__div .card .card__nombre {
-        padding: 0% 2% 2%;
+        padding: 0% 6% 5%;
         display: flex;
         justify-content: space-between;
         align-items: flex-end; }
       .catalogo .catalogo__div .card .descripcion {
-        margin: 0% 2% 2%; }
+        margin: 0% 6% 2%; }
       .catalogo .catalogo__div .card button {
-        margin: 2% 5%;
+        margin: 5% 5%;
         padding: 2%;
         color: #fff;
         font-weight: 600;
@@ -143,3 +158,25 @@ header {
 
 .nosotros {
   margin: 0 2% 5%; }
+
+@media (min-width: 576px) {
+  header .header__div {
+    padding: 5% 5%;
+    margin-bottom: 5%; }
+  .catalogo {
+    margin: 0 5% 5%; }
+    .catalogo .buscador #buscador {
+      width: 65%; }
+    .catalogo .catalogo__div {
+      grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 768px) {
+  header .header__div {
+    padding: 5% 10%;
+    margin-bottom: 5%; }
+  .catalogo {
+    margin: 0 10% 5%; }
+    .catalogo .buscador #buscador {
+      width: 60%; }
+    .catalogo .catalogo__div {
+      grid-template-columns: repeat(3, 1fr); } }

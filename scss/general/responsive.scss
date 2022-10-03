@@ -1,0 +1,59 @@
+
+// 576 PX
+@media (min-width:576px){
+    // HEADER
+    header{
+        .header__div{
+            padding: 5% 5%;
+            margin-bottom: 5%;
+        }    
+    }
+
+    // HOME
+    .catalogo{
+        margin: 0 5% 5%;
+        .buscador{
+            #buscador{ width: 65%;}
+        }
+        .catalogo__div{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+// 768 PX
+@media (min-width:768px){
+    // HEADER
+    header{
+        .header__div{
+            padding: 5% 10%;
+            margin-bottom: 5%;
+        }    
+        }
+
+    // HOME
+    .catalogo{
+        margin: 0 10% 5%;
+        .buscador{
+            #buscador{ width: 60%;}
+        }
+        .catalogo__div{
+            grid-template-columns: repeat(3,1fr);
+        }
+        }
+}
+
+// 992 PX
+@media (min-width:992px){
+   
+}
+
+// 1200 PX
+@media (min-width:1200px){
+    
+}
+
+// 1400 PX
+ @media (min-width:1400px){
+    
+ }

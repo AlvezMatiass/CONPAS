@@ -1,5 +1,6 @@
 .catalogo{
     margin: 0 2% 5%;
+    height: min-content;
     .catalogo__presentacion{
         margin: 2% 0%;
     }
@@ -15,7 +16,7 @@
         input[type="search"]::-webkit-search-results-decoration {display: none;}
         #buscador{
             border: none;
-            width: 50%;
+            width: 75%;
             padding: 15px;
             @include neo-afuera-small;
             margin-right: 2%;
@@ -35,21 +36,31 @@
     .catalogo__div{
         margin: 2% 0%;
         display: grid;
-        gap: 2%;
+        grid-template-columns: repeat(1,1fr);
         .card{
             @include neo-afuera-small;
+            margin: 3%;
             display: flex;
             flex-direction: column;
-            img{background-color: aqua;margin: 2%;}
+            .card__img{
+                @include neo-dentro;
+                
+                height: 80%;
+                width: 90%;
+                margin: 5% auto;
+                img{width: 100%;overflow: hidden;object-fit: cover;border-radius: 15px;}
+            }
+            
             .card__nombre{
-                padding: 0% 2% 2%;
+                
+                padding: 0% 6% 5%;
                 display: flex;
                 justify-content: space-between;
                 align-items: flex-end;
             }
-            .descripcion{margin: 0% 2% 2%;}
+            .descripcion{margin: 0% 6% 2%;}
 
-            button{margin: 2% 5%; padding: 2%; @include neo-button;}
+            button{margin: 5% 5%; padding: 2%; @include neo-button;}
 
         }
     }
