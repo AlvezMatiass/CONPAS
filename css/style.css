@@ -140,3 +140,6 @@ header {
         cursor: pointer;
         background: linear-gradient(145deg, #429cda, #3883b8);
         box-shadow: 5px 5px 5px #c2bec2, -5px -5px 5px #fff; }
+
+.nosotros {
+  margin: 0 2% 5%; }
