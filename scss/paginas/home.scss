@@ -49,6 +49,7 @@
             @include neo-afuera-small;
             margin: 3%;
             display: flex;
+            justify-content: space-between;
             flex-direction: column;
             .card__img{
                 display: flex;
