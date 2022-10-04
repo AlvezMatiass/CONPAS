@@ -22,7 +22,8 @@ header{
 
         .logo{
             width: 30%;
-            img{width: 100%;max-width: 200px;}
+            img{width: 100%;}
+            cursor: pointer;
         }
         .navbar{
             display: flex;

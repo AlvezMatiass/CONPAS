@@ -15,6 +15,8 @@ const arrayCards = [];
 const catalogo = document.querySelector(".catalogo__div")
 // Conseguir el contenido de template(la guia de la card)
 const templateCard = document.getElementById("template__card").content
+// Conseguir el div donde está el resultado cuando no hay cards
+const noCard = document.getElementById("catalogo-no-encontrado")
 // Creamos un fragmento
 const fragmento = document.createDocumentFragment()
 
@@ -54,6 +56,7 @@ const fetchData = async () => {
 
 const printCards = (arrayCards) =>{
     console.log("Se ejecuto el for each")
+    noCard.classList.add("invisible")
     arrayCards.forEach( (row)=>{
         
         templateCard.querySelector(".card").setAttribute("id",row.c[0].v);
@@ -72,34 +75,3 @@ const printCards = (arrayCards) =>{
     catalogo.appendChild(fragmento)
 }
 
-
-
-
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
-// CONSUMO DE FETCH SIMPLE
-/*
-fetch(url)
-.then(res => res.text())
-.then(stringObtenido => {
-    console.log(stringObtenido)
-    console.log(typeof(stringObtenido))
-    const data = JSON.parse(stringObtenido.slice(47, -2))
-    const datos =data.table
-    console.log(datos)
-})
-.catch( () => {
-    console.log("La base de datos no funciono")
-    fetch("../backup.txt")
-    .then(res => res.text())
-    .then(stringObtenido => {
-        console.log(stringObtenido)
-        console.log(typeof(stringObtenido))
-        const data = JSON.parse(stringObtenido)
-        const datos =data.table
-        console.log(datos)
-    })
-})
-*/

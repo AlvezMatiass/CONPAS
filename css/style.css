@@ -40,10 +40,10 @@ header {
     max-width: 1000px;
     padding: 5% 2%; }
     header .header__div .logo {
-      width: 30%; }
+      width: 30%;
+      cursor: pointer; }
       header .header__div .logo img {
-        width: 100%;
-        max-width: 200px; }
+        width: 100%; }
     header .header__div .navbar {
       display: flex;
       justify-content: flex-end;
@@ -83,7 +83,9 @@ footer {
 
 .catalogo {
   margin: 0 2% 5%;
-  max-width: 1000px; }
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column; }
   .catalogo .catalogo__presentacion {
     margin: 2% 0%; }
   .catalogo .buscador {
@@ -107,7 +109,8 @@ footer {
       background-color: #fffaff;
       border-radius: 10px;
       box-shadow: 5px 5px 10px #c2bec2, -5px -5px 10px #fff;
-      margin-right: 2%; }
+      margin-right: 2%;
+      min-width: 250px; }
     .catalogo .buscador .buscador__div {
       display: flex;
       justify-content: center;

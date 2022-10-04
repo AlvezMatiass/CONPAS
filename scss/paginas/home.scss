@@ -6,6 +6,8 @@
 .catalogo{
     margin: 0 2% 5%;
     max-width: 1000px;
+    display: flex;
+    flex-direction: column;
     .catalogo__presentacion{
         margin: 2% 0%;
     }
@@ -25,6 +27,7 @@
             padding: 15px;
             @include neo-afuera-small;
             margin-right: 2%;
+            min-width: 250px;
         }
         .buscador__div{
             display: flex;
