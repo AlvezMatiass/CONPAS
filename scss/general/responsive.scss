@@ -40,6 +40,31 @@
             grid-template-columns: repeat(3,1fr);
         }
     }
+
+    // FOOTER
+    .foot {
+       .logo-footer {
+        padding: 1.2rem;
+        a {
+            img {
+                width: 120px;
+            }
+        }
+       }
+       .redes-footer {
+        padding: .6rem 0;
+        a {
+            margin: 0 .6rem;
+            .img-face {
+                width: 28px;
+                margin: 0 0 3px 0;
+            }
+            .img-insta {
+                width: 33px;
+            }
+        }
+    }
+    }
 }
 
 // 992 PX
@@ -85,6 +110,31 @@
             grid-template-columns: repeat(4,1fr);
         }
     }
+
+    // FOOTER
+    .foot {
+        .logo-footer {
+         padding: 1.5rem;
+         a {
+             img {
+                 width: 140px;
+             }
+         }
+        }
+        .redes-footer {
+         padding: .8rem 0;
+         a {
+             margin: 0 .7rem;
+             .img-face {
+                 width: 30px;
+                 margin: 0 0 3px 0;
+             }
+             .img-insta {
+                 width: 35px;
+             }
+         }
+     }
+     }
 }
 
 // 1400 PX
