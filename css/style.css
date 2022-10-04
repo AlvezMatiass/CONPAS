@@ -54,27 +54,28 @@ header {
 
 /* footer */
 footer {
-  height: 500px; }
+  height: 100px; }
 
 .foot {
-  background-color: #3a3838;
-  height: 10vh; }
-  .foot section {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center; }
-    .foot section section img {
-      height: 80px; }
-    .foot section div {
-      display: flex; }
-      .foot section div ul {
-        display: flex;
-        flex-direction: column; }
-        .foot section div ul li {
-          list-style: none; }
-          .foot section div ul li a {
-            text-decoration: none;
-            color: white; }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+  .foot .logo-footer {
+    padding: 1rem 0;
+    background-color: #0a2463; }
+    .foot .logo-footer a img {
+      width: 100px; }
+  .foot .redes-footer {
+    background-color: #fffaff;
+    padding: .6rem 0; }
+    .foot .redes-footer a {
+      margin: 0 .5rem; }
+      .foot .redes-footer a .img-face {
+        width: 25px;
+        margin: 0 0 3px 0; }
+      .foot .redes-footer a .img-insta {
+        width: 30px; }
 
 .contenido {
   display: flex;
@@ -205,7 +206,20 @@ footer {
     .catalogo .buscador #buscador {
       width: 60%; }
     .catalogo .catalogo__div {
-      grid-template-columns: repeat(3, 1fr); } }
+      grid-template-columns: repeat(3, 1fr); }
+  .foot .logo-footer {
+    padding: 1.2rem; }
+    .foot .logo-footer a img {
+      width: 120px; }
+  .foot .redes-footer {
+    padding: .6rem 0; }
+    .foot .redes-footer a {
+      margin: 0 .6rem; }
+      .foot .redes-footer a .img-face {
+        width: 28px;
+        margin: 0 0 3px 0; }
+      .foot .redes-footer a .img-insta {
+        width: 33px; } }
 
 @media (min-width: 992px) {
   header {
@@ -229,7 +243,20 @@ footer {
     .catalogo .buscador #buscador {
       width: 50%; }
     .catalogo .catalogo__div {
-      grid-template-columns: repeat(4, 1fr); } }
+      grid-template-columns: repeat(4, 1fr); }
+  .foot .logo-footer {
+    padding: 1.5rem; }
+    .foot .logo-footer a img {
+      width: 140px; }
+  .foot .redes-footer {
+    padding: .8rem 0; }
+    .foot .redes-footer a {
+      margin: 0 .7rem; }
+      .foot .redes-footer a .img-face {
+        width: 30px;
+        margin: 0 0 3px 0; }
+      .foot .redes-footer a .img-insta {
+        width: 35px; } }
 
 @media (min-width: 1400px) {
   header {
