@@ -44,7 +44,7 @@
     .catalogo__div{
         margin: 2% 0%;
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
         .card{
             @include neo-afuera-small;
             margin: 3%;
