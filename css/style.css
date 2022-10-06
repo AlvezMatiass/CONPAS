@@ -51,6 +51,9 @@ header {
       header .header__div .navbar a {
         margin-left: 5%;
         font-weight: 600; }
+        header .header__div .navbar a:hover {
+          color: #d8315b;
+          transition: all ease-in-out 0.3s; }
 
 /* footer */
 footer {
@@ -131,13 +134,14 @@ footer {
   .catalogo .catalogo__div {
     margin: 2% 0%;
     display: grid;
-    grid-template-columns: repeat(1, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
     .catalogo .catalogo__div .card {
       background-color: #fffaff;
       border-radius: 10px;
       box-shadow: 5px 5px 10px #c2bec2, -5px -5px 10px #fff;
       margin: 3%;
       display: flex;
+      justify-content: space-between;
       flex-direction: column; }
       .catalogo .catalogo__div .card .card__img {
         display: flex;
@@ -162,7 +166,8 @@ footer {
           text-align: end; }
         .catalogo .catalogo__div .card .card__nombre .oferta-txt {
           font-weight: 700;
-          color: #d8315b; }
+          color: #d8315b;
+          overflow-wrap: break-word; }
         .catalogo .catalogo__div .card .card__nombre h3 {
           max-width: 65%;
           height: auto;
@@ -180,6 +185,36 @@ footer {
         background: linear-gradient(145deg, #429cda, #3883b8);
         box-shadow: 5px 5px 5px #c2bec2, -5px -5px 5px #fff;
         position: relative; }
+        .catalogo .catalogo__div .card button:hover {
+          transition: ease 0.5s;
+          color: #fff;
+          font-weight: 600;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          background: #d8315b;
+          background: linear-gradient(145deg, #c22c52, #e73461);
+          box-shadow: 5px 5px 15px #6b6b6b, -5px -5px 15px #fff; }
+        .catalogo .catalogo__div .card button:focus {
+          transition: all 0s;
+          color: #fff;
+          font-weight: 600;
+          border-radius: 10px;
+          border: none;
+          cursor: pointer;
+          background: #d8315b;
+          box-shadow: inset 2px 2px 12px #861e38, inset -4px -4px 12px #ff447e; }
+        .catalogo .catalogo__div .card button:disabled {
+          cursor: default;
+          color: #fffaff;
+          background: linear-gradient(145deg, #c2bec2, #c2bec2);
+          box-shadow: 5px 5px 5px #6b6b6b, -5px -5px 5px #fff; }
+
+.disable img {
+  filter: grayscale(75) opacity(80%); }
+
+.disable p, .disable h3 {
+  filter: grayscale(100) opacity(50%); }
 
 .nosotros {
   margin: 0 2% 5%; }

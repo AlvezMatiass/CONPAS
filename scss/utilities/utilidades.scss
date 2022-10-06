@@ -12,7 +12,7 @@ $rosa: #d8315b;
 // COLORES SOMBRA
 $sombra-blanco: #f0f0f3;
 $sombra-oscura: #c2bec2;
-;
+$sombra-muy-oscura: #6b6b6b;
 
 
 // MIXIN
@@ -52,13 +52,28 @@ $sombra-oscura: #c2bec2;
     box-shadow:  5px 5px 5px $sombra-oscura,
                 -5px -5px 5px $blanco-puro;
 }
+@mixin neo-button-hover{
+    color: $blanco-puro;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    background: $rosa;
+    background: linear-gradient(145deg, #c22c52, #e73461);
+    box-shadow:  5px 5px 15px $sombra-muy-oscura,
+             -5px -5px 15px $blanco-puro;
+    
+    //background: linear-gradient(145deg, #429cda, #3883b8);
+    //box-shadow:  10px 10px 20px $sombra-oscura,
+    //            -10px -10px 20px $blanco-puro;
+}
 @mixin neo-button-click {
     color: $blanco-puro;
     font-weight: 600;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    background: #3e92cc;
-    box-shadow:  inset 5px 5px 5px #3883b8,
-                 inset -5px -5px 5px #44a1e0;;
+    background: #d8315b;
+    box-shadow: inset 2px 2px 12px #861e38,
+                inset -4px -4px 12px #ff447e;
 }

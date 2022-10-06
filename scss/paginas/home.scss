@@ -44,7 +44,7 @@
     .catalogo__div{
         margin: 2% 0%;
         display: grid;
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(2,1fr);
         .card{
             @include neo-afuera-small;
             margin: 3%;
@@ -73,14 +73,40 @@
                 justify-content: space-between;
                 align-items: baseline;
                 .oferta-txt, .precio{text-align:end;}
-                .oferta-txt{font-weight: 700; color: $rosa;}
+                .oferta-txt{font-weight: 700; color: $rosa;overflow-wrap: break-word;}
                 h3{max-width: 65%;height: auto; overflow-wrap: break-word;}
             }
             .descripcion{margin: 0% 6% 2%;}
 
-            button{margin: 5% 5%; padding: 2%; @include neo-button;position: relative;}
+            button{
+                margin: 5% 5%;
+                padding: 2%;
+                @include neo-button;
+                position: relative;
+                &:hover{
+                    transition: ease 0.5s;
+                    @include neo-button-hover;
+                }
+                &:focus{
+                    transition: all 0s;
+                    @include neo-button-click;
+                }
+                &:disabled{
+                    cursor: default;
+                    color: $blanco;
+                    background: linear-gradient(145deg, $sombra-oscura, $sombra-oscura);
+                    box-shadow:  5px 5px 5px $sombra-muy-oscura,
+                                -5px -5px 5px $blanco-puro;
+                }
+            }
 
         }
     }
 
+}
+
+
+.disable{
+    img{filter: grayscale(75) opacity(80%);}
+    p,h3{filter: grayscale(100) opacity(50%);}
 }

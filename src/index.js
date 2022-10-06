@@ -68,7 +68,17 @@ const printCards = (arrayCards) =>{
         templateCard.querySelector(".categoria").textContent = row.c[6].v;
         templateCard.querySelector(".oferta-txt").textContent = row.c[7].v;
         
-        templateCard.querySelector(".button-card").textContent = "Contactar por WhatsApp"
+        if(templateCard.querySelector(".stock").textContent=== "0"){
+            templateCard.querySelector(".button-card").textContent = "Sin stock"
+            templateCard.querySelector(".card").classList.add("disable")
+            templateCard.querySelector(".button-card").classList.add("disable-btn")
+            templateCard.querySelector(".button-card").disabled=true
+        }else{
+            templateCard.querySelector(".button-card").disabled=false
+            templateCard.querySelector(".card").classList.remove("disable")
+            templateCard.querySelector(".button-card").textContent = "Contactar por WhatsApp"
+        }
+        
         const clone = templateCard.cloneNode(true)
         fragmento.appendChild(clone)
     })

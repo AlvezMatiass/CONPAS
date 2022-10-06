@@ -30,7 +30,14 @@ header{
             justify-content: flex-end;
 
             width: 70%;
-            a{margin-left: 5%; font-weight: 600;}
+            a{
+                margin-left: 5%;
+                font-weight: 600;
+                &:hover{
+                    color: $rosa;
+                    transition: all ease-in-out 0.3s;
+                }
+            }
         }
     }
     
