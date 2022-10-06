@@ -134,7 +134,7 @@ footer {
   .catalogo .catalogo__div {
     margin: 2% 0%;
     display: grid;
-    grid-template-columns: repeat(1, 1fr); }
+    grid-template-columns: repeat(2, 1fr); }
     .catalogo .catalogo__div .card {
       background-color: #fffaff;
       border-radius: 10px;
@@ -143,6 +143,8 @@ footer {
       display: flex;
       justify-content: space-between;
       flex-direction: column; }
+      .catalogo .catalogo__div .card p {
+        font-size: 0.8rem; }
       .catalogo .catalogo__div .card .card__img {
         display: flex;
         justify-content: center;
@@ -171,7 +173,8 @@ footer {
         .catalogo .catalogo__div .card .card__nombre h3 {
           max-width: 65%;
           height: auto;
-          overflow-wrap: break-word; }
+          overflow-wrap: break-word;
+          font-size: 1rem; }
       .catalogo .catalogo__div .card .descripcion {
         margin: 0% 6% 2%; }
       .catalogo .catalogo__div .card button {
@@ -229,7 +232,11 @@ footer {
     .catalogo .buscador #buscador {
       width: 65%; }
     .catalogo .catalogo__div {
-      grid-template-columns: repeat(2, 1fr); } }
+      grid-template-columns: repeat(2, 1fr); }
+      .catalogo .catalogo__div .card p {
+        font-size: 1rem; }
+      .catalogo .catalogo__div .card .card__nombre h3 {
+        font-size: 1.17rem; } }
 
 @media (min-width: 768px) {
   header {
@@ -260,7 +267,8 @@ footer {
   header {
     margin-bottom: 3%; }
     header .header__div {
-      padding: 3% 12%; }
+      padding: 3% 12%;
+      max-width: 100%; }
   .catalogo {
     margin: 0 12% 5%; }
     .catalogo .buscador #buscador {
@@ -272,7 +280,8 @@ footer {
   header {
     margin-bottom: 3%; }
     header .header__div {
-      padding: 3% 15%; }
+      padding: 3% 15%;
+      max-width: 80%; }
   .catalogo {
     margin: 0 15% 5%; }
     .catalogo .buscador #buscador {
@@ -297,7 +306,8 @@ footer {
   header {
     margin-bottom: 3%; }
     header .header__div {
-      padding: 1% 15%; }
+      padding: 2% 15%;
+      max-width: 70%; }
   .catalogo {
     margin: 0 15% 5%; }
     .catalogo .buscador #buscador {
