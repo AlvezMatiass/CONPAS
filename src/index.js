@@ -76,7 +76,7 @@ const printCards = (arrayCards) =>{
         }else{
             templateCard.querySelector(".button-card").disabled=false
             templateCard.querySelector(".card").classList.remove("disable")
-            templateCard.querySelector(".button-card").textContent = "Contactar por WhatsApp"
+            templateCard.querySelector(".button-card").innerHTML = `<img src="./assets/img/wsp.png">` + "Contactar"
         }
         
         const clone = templateCard.cloneNode(true)

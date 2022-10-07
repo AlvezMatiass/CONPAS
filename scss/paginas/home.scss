@@ -80,7 +80,11 @@
             .descripcion{margin: 0% 6% 2%;}
 
             button{
+                img{width: 1rem; margin-right: 0.5rem;}
                 margin: 5% 5%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 padding: 2%;
                 @include neo-button;
                 position: relative;

@@ -179,6 +179,9 @@ footer {
         margin: 0% 6% 2%; }
       .catalogo .catalogo__div .card button {
         margin: 5% 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 2%;
         color: #fff;
         font-weight: 600;
@@ -188,6 +191,9 @@ footer {
         background: linear-gradient(145deg, #429cda, #3883b8);
         box-shadow: 5px 5px 5px #c2bec2, -5px -5px 5px #fff;
         position: relative; }
+        .catalogo .catalogo__div .card button img {
+          width: 1rem;
+          margin-right: 0.5rem; }
         .catalogo .catalogo__div .card button:hover {
           transition: ease 0.5s;
           color: #fff;
