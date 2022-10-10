@@ -23,6 +23,29 @@
         }
         }
     }
+    // NOSOTROS
+    .nosotros {
+        div {
+            h1, h2 {
+                font-size: 2rem;
+                margin: .8rem 0;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            div {
+                svg {
+                    width: 20px;
+                    margin: 0 .4rem 0 0;
+                }
+            }
+        }
+        .nosotros-info {
+            p {
+                margin: .4rem 0;
+            }
+        }
+    }
 }
 
 // 768 PX
@@ -70,6 +93,10 @@
         }
     }
     }
+    // NOSOTROS
+    .nosotros {
+        margin: 2rem auto;
+    }
 }
 
 // 992 PX
@@ -91,6 +118,25 @@
         }
         .catalogo__div{
             grid-template-columns: repeat(3,1fr);
+        }
+    }
+    // NOSOTROS
+    .nosotros {
+        margin: 3rem auto;
+        padding: 1.5rem;
+        div {
+            h1, h2 {
+                font-size: 2.4rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+            div {
+                svg {
+                    width: 24px;
+                    margin: 0 .8rem 0 0;
+                }
+            }
         }
     }
 }
