@@ -74,14 +74,10 @@ footer {
     padding: .6rem 0; }
     .foot .redes-footer a {
       margin: 0 .5rem; }
-      .foot .redes-footer a .img-face {
-        width: 25px;
-        margin: 0 0 3px 0; }
       .foot .redes-footer a .img-insta {
-        width: 30px; }
+        width: 18px; }
       .foot .redes-footer a .img-whats {
-        width: 33px;
-        transform: translateX(-5px); }
+        width: 18px; }
 
 .contenido {
   display: flex;
@@ -235,9 +231,9 @@ footer {
   border-radius: 10px;
   padding: .5rem 1rem; }
   .nosotros div h1, .nosotros div h2 {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 700;
-    margin: .5rem 0; }
+    margin: .4rem 0; }
   .nosotros div p {
     font-size: 1rem; }
   .nosotros div div {
@@ -265,15 +261,15 @@ footer {
       .catalogo .catalogo__div .card .card__nombre h3 {
         font-size: 1.17rem; }
   .nosotros div h1, .nosotros div h2 {
-    font-size: 2rem;
-    margin: .8rem 0; }
+    font-size: 1.8rem;
+    margin: .6rem 0; }
   .nosotros div p {
     font-size: 1.2rem; }
   .nosotros div div svg {
     width: 20px;
     margin: 0 .4rem 0 0; }
   .nosotros .nosotros-info p {
-    margin: .4rem 0; } }
+    margin: .3rem 0; } }
 
 @media (min-width: 768px) {
   header {
@@ -294,11 +290,10 @@ footer {
     padding: .6rem 0; }
     .foot .redes-footer a {
       margin: 0 .6rem; }
-      .foot .redes-footer a .img-face {
-        width: 28px;
-        margin: 0 0 3px 0; }
+      .foot .redes-footer a .img-whats {
+        width: 22px; }
       .foot .redes-footer a .img-insta {
-        width: 33px; }
+        width: 22px; }
   .nosotros {
     margin: 2rem auto; } }
 
@@ -318,7 +313,7 @@ footer {
     margin: 3rem auto;
     padding: 1.5rem; }
     .nosotros div h1, .nosotros div h2 {
-      font-size: 2.4rem; }
+      font-size: 2rem; }
     .nosotros div p {
       font-size: 1.5rem; }
     .nosotros div div svg {
@@ -345,11 +340,10 @@ footer {
     padding: .8rem 0; }
     .foot .redes-footer a {
       margin: 0 .7rem; }
-      .foot .redes-footer a .img-face {
-        width: 30px;
-        margin: 0 0 3px 0; }
+      .foot .redes-footer a .img-whats {
+        width: 26px; }
       .foot .redes-footer a .img-insta {
-        width: 35px; } }
+        width: 26px; } }
 
 @media (min-width: 1400px) {
   header {
