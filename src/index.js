@@ -65,12 +65,13 @@ const printCards = (arrayCards) =>{
         templateCard.querySelector(".descripcion").textContent = row.c[4].v;
         templateCard.querySelector(".stock").textContent = (row.c[5].v);
 
-        if((row.c[6]) == null){templateCard.querySelector(".categoria").textContent = " ";}
-        else{templateCard.querySelector(".categoria").textContent = row.c[6].v;}
+        // Si la columna n.6 de la row es diferente a null, entonces en le texto poner el contenido, pero si null poner " " 
+        if((row.c[6]) != null){templateCard.querySelector(".categoria").textContent = row.c[6].v;}
+        else{templateCard.querySelector(".categoria").textContent = " ";}
         
         templateCard.querySelector(".oferta-txt").textContent = row.c[7].v;
         
-        
+
         if(templateCard.querySelector(".stock").textContent=== "0"){
             templateCard.querySelector(".button-card").textContent = "Sin stock"
             templateCard.querySelector(".card").classList.add("disable")
