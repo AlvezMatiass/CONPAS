@@ -30,6 +30,7 @@ const catchParent = (card) => {
     let mensaje_final = `Hola,%20te%20queria%20preguntar%20sobre%20el%20producto${msj}`
 
     let mensaje = "https://api.whatsapp.com/send/?phone=542323313642&text=" + mensaje_final
+
     console.log(mensaje)
     
 

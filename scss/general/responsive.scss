@@ -23,6 +23,29 @@
         }
         }
     }
+    // NOSOTROS
+    .nosotros {
+        div {
+            h1, h2 {
+                font-size: 1.8rem;
+                margin: .6rem 0;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+            div {
+                svg {
+                    width: 20px;
+                    margin: 0 .4rem 0 0;
+                }
+            }
+        }
+        .nosotros-info {
+            p {
+                margin: .3rem 0;
+            }
+        }
+    }
 }
 
 // 768 PX
@@ -60,15 +83,18 @@
         padding: .6rem 0;
         a {
             margin: 0 .6rem;
-            .img-face {
-                width: 28px;
-                margin: 0 0 3px 0;
+            .img-whats {
+                width: 22px;
             }
             .img-insta {
-                width: 33px;
+                width: 22px;
             }
         }
     }
+    }
+    // NOSOTROS
+    .nosotros {
+        margin: 2rem auto;
     }
 }
 
@@ -91,6 +117,25 @@
         }
         .catalogo__div{
             grid-template-columns: repeat(3,1fr);
+        }
+    }
+    // NOSOTROS
+    .nosotros {
+        margin: 3rem auto;
+        padding: 1.5rem;
+        div {
+            h1, h2 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1.5rem;
+            }
+            div {
+                svg {
+                    width: 24px;
+                    margin: 0 .8rem 0 0;
+                }
+            }
         }
     }
 }
@@ -132,12 +177,11 @@
          padding: .8rem 0;
          a {
              margin: 0 .7rem;
-             .img-face {
-                 width: 30px;
-                 margin: 0 0 3px 0;
+             .img-whats{
+                 width: 26px;
              }
              .img-insta {
-                 width: 35px;
+                 width: 26px;
              }
          }
      }
