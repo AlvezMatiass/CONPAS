@@ -57,7 +57,7 @@ const printCards = (arrayCards) =>{
     console.log("Se ejecuto el for each")
     noCard.classList.add("invisible")
     arrayCards.forEach( (row)=>{
-        console.log(row)
+        
         templateCard.querySelector(".card").setAttribute("id",row.c[0].v);
         templateCard.querySelector(".img").setAttribute("src",row.c[1].v)
         templateCard.querySelector(".nombre").textContent = row.c[2].v;
