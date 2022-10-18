@@ -61,7 +61,11 @@ const printCards = (arrayCards) =>{
         templateCard.querySelector(".card").setAttribute("id",row.c[0].v);
         templateCard.querySelector(".img").setAttribute("src",row.c[1].v)
         templateCard.querySelector(".nombre").textContent = row.c[2].v;
-        templateCard.querySelector(".precio").textContent = `$ ${row.c[3].v}`;
+        
+        // si no tiene precio
+        if((row.c[3]) != null){templateCard.querySelector(".precio").textContent = `$ ${row.c[3].v}`;}
+        else{templateCard.querySelector(".precio").textContent = ""}
+
         templateCard.querySelector(".descripcion").textContent = row.c[4].v;
         templateCard.querySelector(".stock").textContent = (row.c[5].v);
 
