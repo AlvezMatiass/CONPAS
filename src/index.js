@@ -46,7 +46,7 @@ const fetchData = async () => {
         const data = JSON.parse(stringObtenido)
         const datos =data.table
         console.log(datos)
-        arrayCards.push(datos.rows)
+        arrayCards.push(...datos.rows)
         console.log(arrayCards)
         printCards(arrayCards)
     }
@@ -73,7 +73,10 @@ const printCards = (arrayCards) =>{
         if((row.c[6]) != null){templateCard.querySelector(".categoria").textContent = row.c[6].v;}
         else{templateCard.querySelector(".categoria").textContent = " ";}
         
-        templateCard.querySelector(".oferta-txt").textContent = row.c[7].v;
+
+        if((row.c[7]) != null){templateCard.querySelector(".oferta-txt").textContent = row.c[7].v;}
+        else{templateCard.querySelector(".oferta-txt").textContent = ""}
+        
         
 
         if(templateCard.querySelector(".stock").textContent=== "0"){
